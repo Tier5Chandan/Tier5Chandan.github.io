@@ -4918,6 +4918,10 @@ input[type=submit].btn-block {
     color: #fff;
     border-radius: 50%;
     text-decoration: none;
+    transition: .3s;
+}
+.social-iconbar a:hover{
+    transform: translateX(10px);
 }
 .social-iconbar i{
     padding: .8rem .8rem;
