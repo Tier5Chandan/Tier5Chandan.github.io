@@ -1,0 +1,99 @@
+.schedules_page{
+	padding: 80px 10px;
+	padding-top: 10rem;
+}
+.schedules_sec{
+	display: -ms-flexbox;
+    display: -webkit-flex;
+	display: flex;
+    justify-content: center;
+    margin-top: 2rem;    
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+.schedules_grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	justify-items: center;
+	-ms-flex-align: center;
+    -webkit-align-items: center;
+	align-items: center;
+}
+.sc_rd_Box {
+	width: 100%;
+	height: 100%;
+    font-size: 16px;
+    margin-right: -1px;
+    vertical-align: top;
+}
+.sc_rd_Box:nth-child(even) .day:after {
+    content: '';
+    background: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.sc_rd_Box .day {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    -webkit-letter-spacing: 2px;
+  	-moz-letter-spacing: 2px;
+  	-ms-letter-spacing: 2px;
+    letter-spacing: 2px;
+    padding: 16px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    position: relative;
+}
+
+.sc_rd_Box ul {
+    border: solid #c8c8c8;
+    border-width: 0 1px;
+    margin: 0!important;
+}
+.sc_rd_Box ul li {
+	list-style: none;
+    background-image: none!important;
+    background-color: #000000;
+    padding: 10px!important;
+    color: var(--color, #f0f0f0);
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 700;
+    -webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.sc_rd_Box ul li a {
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.sc_rd_Box .time {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #6a6a6a;
+    display: block;
+    clear: both;
+    line-height: normal;
+}
+.sc_rd_item:hover{
+	background: #fff;
+}
+.sc_rd_item:hover a{
+	color: #000!important;
+}

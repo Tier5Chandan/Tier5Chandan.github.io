@@ -31,5 +31,20 @@
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
+    
 })(jQuery);
+
+
+$("#programFilter .nav-item .nav-link").click((e) => {
+    console.log(e.target.id);
+    if (e.target.id!=="all_class") {
+        $("#class-all table td").css("background","");
+        $("." + e.target.id).css("background", "var(--primary)");
+        $("."+ e.target.id).css("color","#fff");
+    }
+    if (e.target.id=="all_class") {
+        $("#class-all table td").css("background", "");
+        $("#class-all table td").css("color","#343a40");
+    }
+});
 

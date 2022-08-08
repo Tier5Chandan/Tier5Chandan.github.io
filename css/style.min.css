@@ -4901,13 +4901,18 @@ input[type=submit].btn-block {
 }
 
 /* Social Nav icon styele here */
-.social-iconbar{
+.fixed-left-side-social .social-iconbar{
     position: fixed;
     bottom: 1rem;
     left: 1rem;
-    /* background-color: red; */
     z-index: 99999;
+}
+.social-iconbar ul{
+    padding: 0;
 
+}
+.social-iconbar ul li{
+    list-style: none;
 }
 .social-iconbar a{
     display: flex;
@@ -4919,6 +4924,9 @@ input[type=submit].btn-block {
     border-radius: 50%;
     text-decoration: none;
     transition: .3s;
+}
+.social-iconbar a span{
+    display: none;
 }
 .social-iconbar a:hover{
     transform: translateX(10px);
@@ -10740,6 +10748,9 @@ a.text-dark:hover {
 .nav-bar.container-xl {
     position: absolute;
     z-index: 9
+}
+.container-fluid.nav-bar{
+    position: fixed;
 }
 
 @media (max-width:991.98px) {
