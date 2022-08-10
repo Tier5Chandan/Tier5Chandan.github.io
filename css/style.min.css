@@ -10750,7 +10750,7 @@ a.text-dark:hover {
     z-index: 9
 }
 .container-fluid.nav-bar{
-    position: fixed;
+    position: relative;
 }
 
 @media (max-width:991.98px) {

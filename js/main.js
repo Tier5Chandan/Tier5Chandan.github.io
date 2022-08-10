@@ -22,9 +22,11 @@
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
+            document.getElementById("navContainer").style.position = "fixed";
             $('.back-to-top').fadeIn('slow');
-        } else {
+        } else {0
             $('.back-to-top').fadeOut('slow');
+            document.getElementById("navContainer").style.position = "relative";
         }
     });
     $('.back-to-top').click(function () {
@@ -36,13 +38,14 @@
 
 
 $("#programFilter .nav-item .nav-link").click((e) => {
-    console.log(e.target.id);
-    if (e.target.id!=="all_class") {
+    if (e.target.id !== "all_class") {
+        $("#class-all td a").removeClass("active");
         $("#class-all table td").css("background","");
         $("." + e.target.id).css("background", "var(--primary)");
-        $("."+ e.target.id).css("color","#fff");
+        $("."+ e.target.id + " a").addClass("active");
     }
-    if (e.target.id=="all_class") {
+    if (e.target.id == "all_class") {
+        $("#class-all td a").removeClass("active");
         $("#class-all table td").css("background", "");
         $("#class-all table td").css("color","#343a40");
     }

@@ -1,3 +1,7 @@
+:root{
+    --primary: #E31C25;
+    --secondary: #343a40;
+}
 .schedules_page{
 	padding: 80px 10px;
 	padding-top: 10rem;
@@ -38,7 +42,7 @@
     z-index: 1;
 }
 .sc_rd_Box .day {
-    background-color: var(--primary-color);
+    background-color: var(--primary);
     color: #ffffff;
     display: block;
     font-weight: 700;
@@ -96,4 +100,89 @@
 }
 .sc_rd_item:hover a{
 	color: #000!important;
+}
+
+
+.class-section .classCard{
+    overflow: hidden;
+}
+.class-section .classCard:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: .5s;
+    transform: translateY(100%);
+    opacity: .3;
+}
+.class-section .classCard:hover:before{
+    background-color: var(--primary);
+    transform: translateY(-0%);
+}
+
+.class-section .classCard h2{
+    position: absolute;
+    top: 45%;
+    color: #fff;
+    left: 45%;
+    transform: translateY(160px);
+    opacity: 0;
+    transition: .5s;
+    text-decoration: underline;  
+}
+.class-section .classCard:hover h2{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#class-all table tr td{
+    transition: .5s;
+    cursor: pointer;
+}
+#class-all table tr td:hover a{
+    text-decoration: underline;
+}
+#class-all table tr td a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+#class-all table tr td a.active{
+    color: #fff;
+}
+#single-page-content{
+    padding: 2rem 5rem;
+    text-align: justify;
+}
+.single-page-container{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+@media (min-width:300px) AND (max-width: 600px) {
+
+    .two-Layout_container{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .two-Layout_container div:first-child{
+        width: 100%!important;
+        padding: 0!important;
+    }
+    .two-Layout_container div:last-child{
+        width: 100%!important;
+        padding: 0!important;
+    }
+    .right-sidebar .form-containter{
+        display: none;
+    }
+    .class-section{
+        margin: 0;
+    }
+    #single-page-content{
+        padding: 2rem 0;
+    }
+
+
 }

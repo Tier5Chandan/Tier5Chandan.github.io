@@ -9,42 +9,77 @@
     <meta content="Free Website Template" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.ico" rel="shortcut icon">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Flaticon Font -->
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <!-- Fontawesome icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.style.css">
 </head>
 
 <body class="bg-white">
+    <!-- <div class="fixed-left-side-social">
+        <div class="social-iconbar">
+            <ul>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span>fb</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span>Ytb</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                        <span>Ytb</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Ytb</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div> -->
     <!-- Navbar Start -->
-    <div class="container-fluid p-0 nav-bar">
-        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
-            <a href="" class="navbar-brand">
-                <h1 class="m-0 display-4 font-weight-bold text-uppercase text-white">Gymnast</h1>
+    <div class="container-fluid p-0 nav-bar" id="navContainer">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark">
+            <a href="" class="navbar-brand siteLogo">
+                <!-- <h1 class="m-0 display-4 font-weight-bold text-uppercase text-white">Gymnast</h1> -->
+                <img src="img/Soul-Fighters-BJJ-Brookfield-logo-transparent.png">
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav ml-auto p-4 bg-secondary">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About Us</a>
-                    <a href="feature.html" class="nav-item nav-link">Our Features</a>
-                    <a href="class.html" class="nav-item nav-link">Classes</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu text-capitalize">
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="single.html" class="dropdown-item">Blog Detail</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Fitness Programs</a>
+                        <div class="dropdown-menu">
+                            <a href="blog.html" class="dropdown-item">Personal Training</a>
+                            <a href="single.html" class="dropdown-item">Group Fitness</a>
+                            <a href="single.html" class="dropdown-item">Online Training</a>
+                            <a href="single.html" class="dropdown-item">Kids fitness</a>
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="about.html" class="nav-item nav-link">Reviews</a>
+                    <a href="feature.html" class="nav-item nav-link">Instructors</a>
+                    <a href="class.html" class="nav-item nav-link">Blog</a>
+                    <a href="class.html" class="nav-item nav-link">Schedule</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact us</a>
+                    <a href="class.html" class="nav-item nav-link">Reserve Your First Class</a>
                 </div>
             </div>
         </nav>
@@ -67,112 +102,138 @@
 
 
     <!-- Blog Start -->
-    <div class="container pt-5">
+    <div class="container-fluid pt-5">
         <div class="d-flex flex-column text-center mb-5">
             <h4 class="text-primary font-weight-bold">Our Blog</h4>
             <h4 class="display-4 font-weight-bold">Latest Article From Blog</h4>
         </div>
-        <div class="row">
-            <div class="col-lg-6 mb-5 blog-item">
-                <img class="img-fluid mb-4" src="img/blog-1.jpg" alt="Image">
-                <div class="d-flex align-items-center mb-4">
-                    <div class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-primary text-white" style="width: 80px; height: 80px;">
-                        <small>01</small>
-                        <strong class="text-uppercase m-0 text-white">Jan</strong>
-                        <small>2045</small>
-                    </div>
-                    <div class="pl-3">
-                        <h3 class="font-weight-bold">Lorem ipsum dolor sit amet</h3>
-                        <div class="d-flex">
-                            <small class="mr-2 text-muted"><i class="fa fa-user"></i> Admin</small>
-                            <small class="mr-2 text-muted"><i class="fa fa-folder"></i> Web Design</small>
-                            <small class="mr-2 text-muted"><i class="fa fa-comments"></i> 15 Comments</small>
+        <div class="d-flex justify-content-between two-Layout_container">
+            <div class="w-75 px-5">
+                <div class="w-100 d-flex flex-column align-items-center">
+                    <div class="col-lg-6 mb-5 blog-item">
+                        <img class="img-fluid mb-4" src="img/blog-1.jpg" alt="Image">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-primary text-white"
+                                style="width: 80px; height: 80px;">
+                                <small>01</small>
+                                <strong class="text-uppercase m-0 text-white">Jan</strong>
+                                <small>2045</small>
+                            </div>
+                            <div class="pl-3">
+                                <h3 class="font-weight-bold">Lorem ipsum dolor sit amet</h3>
+                                <div class="d-flex">
+                                    <small class="mr-2 text-muted"><i class="fa fa-user"></i> Admin</small>
+                                    <small class="mr-2 text-muted"><i class="fa fa-folder"></i> Web Design</small>
+                                    <small class="mr-2 text-muted"><i class="fa fa-comments"></i> 15 Comments</small>
+                                </div>
+                            </div>
                         </div>
+                        <p>Eos kasd et sea labore. Et sed amet magna elitr amet, stet et amet erat nonumy labore lorem ut eos,
+                            sed ut at tempor diam no. Kasd sit ea amet lorem et sea, ipsum sed dolor dolores sed dolore eirmod
+                            vero dolor sed kasd accusam</p>
+                        <a class="btn btn-outline-primary mt-2 px-3" href="">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                    <div class="col-lg-6 mb-5 blog-item">
+                        <img class="img-fluid mb-4" src="img/blog-2.jpg" alt="Image">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-primary text-white"
+                                style="width: 80px; height: 80px;">
+                                <small>01</small>
+                                <strong class="text-uppercase m-0 text-white">Jan</strong>
+                                <small>2045</small>
+                            </div>
+                            <div class="pl-3">
+                                <h3 class="font-weight-bold">Lorem ipsum dolor sit amet</h3>
+                                <div class="d-flex">
+                                    <small class="mr-2 text-muted"><i class="fa fa-user"></i> Admin</small>
+                                    <small class="mr-2 text-muted"><i class="fa fa-folder"></i> Web Design</small>
+                                    <small class="mr-2 text-muted"><i class="fa fa-comments"></i> 15 Comments</small>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Eos kasd et sea labore. Et sed amet magna elitr amet, stet et amet erat nonumy labore lorem ut eos,
+                            sed ut at tempor diam no. Kasd sit ea amet lorem et sea, ipsum sed dolor dolores sed dolore eirmod
+                            vero dolor sed kasd accusam</p>
+                        <a class="btn btn-outline-primary mt-2 px-3" href="">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                    <div class="col-lg-12">
+                        <nav aria-label="Page navigation">
+                          <ul class="pagination justify-content-center mb-4">
+                            <li class="page-item disabled">
+                              <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>
+                    <div class="form-containter p-3" style="width: 450px;">
+                        <center><h1>Enter your information to book an intro lesson/consultation.</h1></center>
+                        <form action="" class="form-group">
+                            <input type="text" class="form-control mt-3" placeholder="Full Name">
+                            <input type="text" class="form-control mt-3" placeholder="Email Address">
+                            <input type="text" class="form-control mt-3" placeholder="Phone">
+                            <center><button class="btn btn-lg btn-danger mt-3">Get FREE LESSON</button></center>
+                        </form>
                     </div>
                 </div>
-                <p>Eos kasd et sea labore. Et sed amet magna elitr amet, stet et amet erat nonumy labore lorem ut eos, sed ut at tempor diam no. Kasd sit ea amet lorem et sea, ipsum sed dolor dolores sed dolore eirmod vero dolor sed kasd accusam</p>
-                <a class="btn btn-outline-primary mt-2 px-3" href="">Read More <i class="fa fa-angle-right"></i></a>
             </div>
-            <div class="col-lg-6 mb-5 blog-item">
-                <img class="img-fluid mb-4" src="img/blog-2.jpg" alt="Image">
-                <div class="d-flex align-items-center mb-4">
-                    <div class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-primary text-white" style="width: 80px; height: 80px;">
-                        <small>01</small>
-                        <strong class="text-uppercase m-0 text-white">Jan</strong>
-                        <small>2045</small>
-                    </div>
-                    <div class="pl-3">
-                        <h3 class="font-weight-bold">Lorem ipsum dolor sit amet</h3>
-                        <div class="d-flex">
-                            <small class="mr-2 text-muted"><i class="fa fa-user"></i> Admin</small>
-                            <small class="mr-2 text-muted"><i class="fa fa-folder"></i> Web Design</small>
-                            <small class="mr-2 text-muted"><i class="fa fa-comments"></i> 15 Comments</small>
-                        </div>
-                    </div>
+            <div class="right-sidebar w-25">
+                <div class="form-containter p-3" style="width: 450px;">
+                    <center><h1>FREE LESSON NOW!</h1></center>
+                    <form action="" class="form-group">
+                        <input type="text" class="form-control mt-3" placeholder="Full Name">
+                        <input type="text" class="form-control mt-3" placeholder="Email Address">
+                        <input type="text" class="form-control mt-3" placeholder="Phone">
+                        <center><button class="btn btn-lg btn-danger mt-3">Get FREE LESSON</button></center>
+                    </form>
                 </div>
-                <p>Eos kasd et sea labore. Et sed amet magna elitr amet, stet et amet erat nonumy labore lorem ut eos, sed ut at tempor diam no. Kasd sit ea amet lorem et sea, ipsum sed dolor dolores sed dolore eirmod vero dolor sed kasd accusam</p>
-                <a class="btn btn-outline-primary mt-2 px-3" href="">Read More <i class="fa fa-angle-right"></i></a>
-            </div>
-            <div class="col-lg-6 mb-5 blog-item">
-                <img class="img-fluid mb-4" src="img/blog-1.jpg" alt="Image">
-                <div class="d-flex align-items-center mb-4">
-                    <div class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-primary text-white" style="width: 80px; height: 80px;">
-                        <small>01</small>
-                        <strong class="text-uppercase m-0 text-white">Jan</strong>
-                        <small>2045</small>
+                <div class="row class-section p-3">
+                    <div class="col-md-12 classCard p-0">
+                        <a href="#">
+                            <div>
+                                <img src="img/brazilian-jiu-jitsu-e1520716990855.webp" class="w-100" alt="" >
+                                <h2>BJJ</h2>
+                            </div>
+                        </a>
                     </div>
-                    <div class="pl-3">
-                        <h3 class="font-weight-bold">Lorem ipsum dolor sit amet</h3>
-                        <div class="d-flex">
-                            <small class="mr-2 text-muted"><i class="fa fa-user"></i> Admin</small>
-                            <small class="mr-2 text-muted"><i class="fa fa-folder"></i> Web Design</small>
-                            <small class="mr-2 text-muted"><i class="fa fa-comments"></i> 15 Comments</small>
+                    <div class="col-md-12 classCard p-0">
+                        <a href="#">
+                        <div>
+                            <img src="img/10th-planet-beaumont-muay-thai.webp" class="w-100" alt="" >
+                            <h2>BJJ</h2>
                         </div>
+                        </a>
                     </div>
-                </div>
-                <p>Eos kasd et sea labore. Et sed amet magna elitr amet, stet et amet erat nonumy labore lorem ut eos, sed ut at tempor diam no. Kasd sit ea amet lorem et sea, ipsum sed dolor dolores sed dolore eirmod vero dolor sed kasd accusam</p>
-                <a class="btn btn-outline-primary mt-2 px-3" href="">Read More <i class="fa fa-angle-right"></i></a>
-            </div>
-            <div class="col-lg-6 mb-5 blog-item">
-                <img class="img-fluid mb-4" src="img/blog-2.jpg" alt="Image">
-                <div class="d-flex align-items-center mb-4">
-                    <div class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-primary text-white" style="width: 80px; height: 80px;">
-                        <small>01</small>
-                        <strong class="text-uppercase m-0 text-white">Jan</strong>
-                        <small>2045</small>
-                    </div>
-                    <div class="pl-3">
-                        <h3 class="font-weight-bold">Lorem ipsum dolor sit amet</h3>
-                        <div class="d-flex">
-                            <small class="mr-2 text-muted"><i class="fa fa-user"></i> Admin</small>
-                            <small class="mr-2 text-muted"><i class="fa fa-folder"></i> Web Design</small>
-                            <small class="mr-2 text-muted"><i class="fa fa-comments"></i> 15 Comments</small>
+                    <div class="col-md-12 classCard p-0">
+                        <a href="#">
+                        <div>
+                            <img src="img/kickboxing-e1520719110185.webp" class="w-100" alt="" >
+                            <h2>BJJ</h2>
                         </div>
+                        </a>
                     </div>
-                </div>
-                <p>Eos kasd et sea labore. Et sed amet magna elitr amet, stet et amet erat nonumy labore lorem ut eos, sed ut at tempor diam no. Kasd sit ea amet lorem et sea, ipsum sed dolor dolores sed dolore eirmod vero dolor sed kasd accusam</p>
-                <a class="btn btn-outline-primary mt-2 px-3" href="">Read More <i class="fa fa-angle-right"></i></a>
-            </div>
-            <div class="col-lg-12">
-                <nav aria-label="Page navigation">
-                  <ul class="pagination justify-content-center mb-4">
-                    <li class="page-item disabled">
-                      <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                      </a>
-                    </li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
+                    <div class="col-md-12 classCard p-0">
+                        <a href="#">
+                        <div>
+                            <img src="img/10th-planet-kids-e1520716268993.webp" class="w-100" alt="" >
+                            <h2>BJJ</h2>
+                        </div>
+                        </a>
+                    </div>
+
+                </div>                
             </div>
         </div>
+        
     </div>
     <!-- Blog End -->
 
