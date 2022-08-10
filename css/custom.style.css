@@ -102,7 +102,9 @@
 	color: #000!important;
 }
 
-
+.nav-bar{
+    z-index: 999999!important;
+}
 .class-section .classCard{
     overflow: hidden;
 }
@@ -150,13 +152,30 @@
     color: #fff;
 }
 #single-page-content{
-    padding: 2rem 5rem;
+    padding: 0 5rem;
+    padding-bottom: 2rem;
     text-align: justify;
 }
 .single-page-container{
     width: 80%;
     display: block;
     margin: 0 auto;
+}
+.nav-pills .nav-link:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(227, 28, 37);
+}
+@media (max-width: 991px) {
+    .right-sidebar{
+        display: none;
+    }
+    .two-Layout_container div:first-child{
+        width: 100%!important;
+        padding: 0 0!important;
+    }
+    .navbar-dark .navbar-toggler{
+        right: 0;
+    }
 }
 @media (min-width:300px) AND (max-width: 600px) {
 
@@ -181,7 +200,7 @@
         margin: 0;
     }
     #single-page-content{
-        padding: 2rem 0;
+        padding-bottom: 2rem;
     }
 
 
