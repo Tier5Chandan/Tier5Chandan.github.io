@@ -105,6 +105,9 @@
 .nav-bar{
     z-index: 999999!important;
 }
+#programFilter{
+    background-color: var(--secondary);
+}
 .class-section .classCard{
     overflow: hidden;
 }
